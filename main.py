@@ -11,7 +11,6 @@ def kill_server():
         shell=True,
     )
 
-
 def spin_up_server():
     subprocess.run(
         "source env/bin/activate; uvicorn main:app --reload",

@@ -4,6 +4,7 @@ import requests
 import subprocess
 import time
 
+
 """
 def kill_server():
     subprocess.run(
@@ -34,6 +35,7 @@ skips = [int(j) for j in skips]
 i = 0
 for i, claim in enumerate(df["claim_entered"]):
     if i in skips:
+        df.loc[i, "bills_found"] = "Request_timed_out"
         print(f"[{i+2}] skip")
         continue
 

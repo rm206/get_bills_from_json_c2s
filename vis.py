@@ -9,7 +9,7 @@ df = pd.read_csv("entered_claims.csv")
 value_counts = df["bills_found"].value_counts()
 
 # Identify 'found' as any value not explicitly listed
-explicit_values = ["500_error", "Request_timed_out", "no_bill_found"]
+explicit_values = ["500_error", "no_bill_found"]
 found_count = value_counts[~value_counts.index.isin(explicit_values)].sum()
 
 # Remove these 'found' values from the series and add a new 'found' entry

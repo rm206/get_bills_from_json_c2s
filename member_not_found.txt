@@ -1,0 +1,157 @@
+Budd voted to pass the 2018 farm bill that helped farmers, invest(ed) in rural broadband, and added work requirements for able-bodied adults
+{'start': 0, 'end': 4}
+Budd
+
+
+Marl Walker voted to pass the 2018 farm bill that helped farmers, invest(ed) in rural broadband, and added work requirements for able-bodied adults
+{'start': 0, 'end': 11}
+Marl Walker
+
+
+U.S. Rep. Matt Gaetz was the lone vote in the House against an anti-human trafficking bill.
+{'input_sentence': 'U.S. Rep. Matt Gaetz was the lone vote in the House against an anti-human trafficking bill.', 'frame_elements': None, 'bills': None, 'member_id': None, 'congress_member': None}
+
+
+Upton voted a dozen times to kick thousands of Michigan families off their health insurance and eliminate protections for preexisting conditions
+{'start': 0, 'end': 5}
+Upton
+
+
+Nick Freitas voted to let businesses discriminate and fire expecting mothers for no other reason but their pregnancy
+{'start': 0, 'end': 12}
+Nick Freitas
+
+
+House candidate Jon Hoadley voted to defund the police
+{'start': 0, 'end': 27}
+House candidate Jon Hoadley
+
+
+Sara Gideon voted to defund the Freeport police and gave the money to a nonprofit she helped run
+{'start': 0, 'end': 11}
+Sara Gideon
+
+
+Cal Cunningham voted for over $1 billion in new taxes
+{'start': 0, 'end': 14}
+Cal Cunningham
+
+
+Thom Tillis voted to support Trumps emergency declaration to fund the border wall even though it would raid $80 million from North Carolina
+{'start': 0, 'end': 11}
+Thom Tillis
+
+
+Phil Scott just voted to impeach President Trump
+{'start': 0, 'end': 10}
+Phil Scott
+
+
+Roy Cooper voted against a bill that would place new penalties on any medical professional who willingly allows infants to die if they survived an abortion
+{'start': 0, 'end': 10}
+Roy Cooper
+
+
+Sen. Emmett Hanger has voted for the three largest tax increases - proposed tax increases - in Virginia history
+{'start': 0, 'end': 18}
+Sen. Emmett Hanger
+
+
+Susana Mendoza voted to hit working families with a massive new soda tax
+{'start': 0, 'end': 14}
+Susana Mendoza
+
+
+Beto O Rourke voted to shield MS-13 gang members from deportation
+{'start': 0, 'end': 13}
+Beto O Rourke
+
+
+Kansas U.S. House candidate Paul Davis was caught with a stripper during a drug raid and later voted to allow strip clubs to open near homes, churches, schools and daycare facilities
+{'start': 0, 'end': 38}
+Kansas U.S. House candidate Paul Davis
+
+
+Leah Vukmir was just about the only legislator who stood with the insurance companies and voted against oral chemotherapy
+{'start': 0, 'end': 11}
+Leah Vukmir
+
+
+Beto O Rourke voted against body armor for Texas sheriffs patrolling the border
+{'start': 0, 'end': 13}
+Beto O Rourke
+
+
+Beto O Rourke voted against Hurricane Harvey tax relief
+{'start': 0, 'end': 13}
+Beto O Rourke
+
+
+Heidi Heitkamp cast the deciding vote to kill the Congressional Review Act that would have repealed a BLM flaring rule that was designed just for North Dakota
+{'input_sentence': 'Heidi Heitkamp cast the deciding vote to kill the Congressional Review Act that would have repealed a BLM flaring rule that was designed just for North Dakota', 'frame_elements': None, 'bills': None, 'member_id': None, 'congress_member': None}
+
+
+Trump votes for death penalty for being gay
+{'start': 0, 'end': 5}
+Trump
+
+
+Heitkamp Voted Against 20-Week Abortion Ban
+{'start': 0, 'end': 8}
+Heitkamp
+
+
+In Congress, RonDeSantis was the DECIDING vote AGAINST our state's right to protect Florida waters from drilling
+{'input_sentence': "In Congress, RonDeSantis was the DECIDING vote AGAINST our state's right to protect Florida waters from drilling", 'frame_elements': None, 'bills': None, 'member_id': None, 'congress_member': None}
+
+
+Stacey Evans voted for (school) vouchers...in the beginning
+{'start': 0, 'end': 12}
+Stacey Evans
+
+
+Stephen Webber voted to allow sex offenders to be within 500 feet of childcare centers and playgrounds, and even voted to allow sex offenders to be coaches
+{'start': 0, 'end': 14}
+Stephen Webber
+
+
+Chris Koster opposed protecting the women of Missouri because he was one of only four senators to vote against a bill ending the practice of making rape victims pay for their own rape kits
+{'start': 62, 'end': 64}
+he
+
+
+Colorado congressional candidate Morgan Carroll voted to allow welfare recipients to use your tax dollars at ATMs at strip clubs and pot dispensaries
+{'start': 0, 'end': 47}
+Colorado congressional candidate Morgan Carroll
+
+
+Dana Young voted for a statewide fracking ban
+{'start': 0, 'end': 10}
+Dana Young
+
+
+Colin Van Ostern voted for extending Medicaid health care coverage to 50,000 of our fellow citizens
+{'start': 0, 'end': 16}
+Colin Van Ostern
+
+
+Ritch Workman voted to remove Common Core from our schools
+{'start': 0, 'end': 13}
+Ritch Workman
+
+
+Ron Johnson justifies his support of trade agreements by saying the U.S. has the Trade Adjustment Assistance program for displaced workers, but then he voted to eliminate it
+{'start': 149, 'end': 151}
+he
+
+
+Sen. John McCain told dreamers that he support the Dream Act, then he voted against it
+{'start': 67, 'end': 69}
+he
+
+
+Erv Nelson voted yes on the pro-amnesty SJR 21, a bill urging Congress to provide citizenship for those residing illegally in our country
+{'start': 0, 'end': 10}
+Erv Nelson
+
+

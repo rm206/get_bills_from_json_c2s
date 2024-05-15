@@ -1,4 +1,5 @@
 import pandas as pd
+from pprint import pprint
 
 df = pd.read_csv("politifact_claims.csv")
 
@@ -8,6 +9,9 @@ models = [
     "msmarco-distilbert-base-v3",
     "msmarco-distilbert-base-v4",
     "msmarco-roberta-base-v3",
+    "msmarco-distilbert-base-dot-prod-v3",
+    "msmarco-roberta-base-ance-firstp",
+    "msmarco-distilbert-base-tas-b",
 ]
 
 scores = {}
@@ -30,4 +34,5 @@ for model in models:
 
     scores[model] = sum_frac / cnt
 
-print(scores)
+
+pprint(scores)

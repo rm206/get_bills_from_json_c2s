@@ -12,12 +12,23 @@ df = pd.read_csv("politifact_claims.csv")
 # msmarco-distilbert-base-v4
 # msmarco-roberta-base-v3
 
+# dot product models -
+# msmarco-distilbert-base-dot-prod-v3
+# msmarco-roberta-base-ance-firstp
+# msmarco-distilbert-base-tas-b
+
+# models = [
+#     "msmarco-MiniLM-L-6-v3",
+#     "msmarco-MiniLM-L-12-v3",
+#     "msmarco-distilbert-base-v3",
+#     "msmarco-distilbert-base-v4",
+#     "msmarco-roberta-base-v3",
+# ]
+
 models = [
-    "msmarco-MiniLM-L-6-v3",
-    "msmarco-MiniLM-L-12-v3",
-    "msmarco-distilbert-base-v3",
-    "msmarco-distilbert-base-v4",
-    "msmarco-roberta-base-v3",
+    "msmarco-distilbert-base-dot-prod-v3",
+    "msmarco-roberta-base-ance-firstp",
+    "msmarco-distilbert-base-tas-b",
 ]
 
 for model in models:

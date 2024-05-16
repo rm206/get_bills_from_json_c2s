@@ -12,6 +12,9 @@ models = [
     "msmarco-distilbert-base-dot-prod-v3",
     "msmarco-roberta-base-ance-firstp",
     "msmarco-distilbert-base-tas-b",
+    "bm25Okapi",
+    "bm25L",
+    "bm25Plus",
 ]
 
 scores = {}

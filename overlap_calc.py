@@ -35,4 +35,6 @@ for model in models:
     scores[model] = sum_frac / cnt
 
 
-pprint(scores)
+scores_list = [[k, v] for k, v in scores.items()]
+scores_list.sort(key=lambda x: x[1], reverse=True)
+pprint(scores_list)

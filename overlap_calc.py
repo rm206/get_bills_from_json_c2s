@@ -17,6 +17,21 @@ models = [
     "bm25Plus",
 ]
 
+model_dict = {
+    "msmarco-MiniLM-L-6-v3": 1,
+    "msmarco-MiniLM-L-12-v3": 1,
+    "msmarco-distilbert-base-v3": 1,
+    "msmarco-distilbert-base-v4": 1,
+    "msmarco-roberta-base-v3": 1,
+    "msmarco-distilbert-base-dot-prod-v3": 2,
+    "msmarco-roberta-base-ance-firstp": 2,
+    "msmarco-distilbert-base-tas-b": 2,
+    "bm25Okapi": 0,
+    "bm25L": 0,
+    "bm25Plus": 0,
+}
+
+
 scores = {}
 for model in models:
     scores[model] = 0
@@ -40,4 +55,37 @@ for model in models:
 
 scores_list = [[k, v] for k, v in scores.items()]
 scores_list.sort(key=lambda x: x[1], reverse=True)
-pprint(scores_list)
+# scores_list = [[k, round(v, 4)] for k, v in scores.items()]
+# scores_list.sort(key=lambda x: x[1], reverse=True)
+# pprint(scores_list)
+
+sum_1s = 0
+sum_2s = 0
+for model, score in scores_list:
+    if model_dict[model] == 1:
+        sum_1s += score
+    elif model_dict[model] == 2:
+        sum_2s += score
+
+print("cos sim", sum_1s / 5)
+print("dot prod", sum_2s / 3)
+
+
+# overlaps = {}
+# for model in models:
+#     overlaps[model] = []
+
+# for model in models:
+#     for i, bills in enumerate(df["sourced_bills"]):
+#         if df.loc[i, model] == "no_bill_found":
+#             continue
+
+#         sourced_bills = eval(bills)
+#         bills_found = eval(df.loc[i, model])
+#         overlap = len(set(sourced_bills) & set(bills_found))
+#         overlaps[model].append(overlap)
+
+# overlaps_list = [[k, v] for k, v in overlaps.items()]
+# overlaps_list.sort(key=lambda x: sum(x[1]), reverse=True)
+# for model, overlap in overlaps_list:
+#     print(model, overlap)

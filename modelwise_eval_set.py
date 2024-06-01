@@ -35,11 +35,11 @@ models = [
 # model = models[1]
 # model = models[2]
 # model = models[3]
-# model = models[4]
+model = models[4]
 # dot product models
 # model = models[5]
 # model = models[6]
-model = models[7]
+# model = models[7]
 
 for i, claim in enumerate(df["claim_entered"]):
     url = "http://127.0.0.1:8000/api?claim=" + claim + "&model_name=" + model

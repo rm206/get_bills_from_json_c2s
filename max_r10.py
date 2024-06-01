@@ -1,4 +1,3 @@
-"""
 import pandas as pd
 import sqlite3
 from pprint import pprint
@@ -69,7 +68,7 @@ for i, bills in enumerate(df["sourced_bills"]):
     s += t / len(sourced_bills)
 
 print(s / cnt)
-"""
+
 
 """
 all_bills = query_database(
@@ -97,7 +96,7 @@ print(s / cnt)
 
 conn.close()
 """
-
+"""
 import pandas as pd
 import sqlite3
 from pprint import pprint
@@ -186,3 +185,4 @@ average_precision = s_precision / cnt if cnt > 0 else 0
 
 print(f"Average Recall: {average_recall}")
 print(f"Average Precision: {average_precision}")
+"""

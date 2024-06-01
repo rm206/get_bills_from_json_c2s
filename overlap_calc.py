@@ -1,7 +1,7 @@
 import pandas as pd
 from pprint import pprint
 
-df = pd.read_csv("politifact_claims.csv")
+df = pd.read_csv("politifact_claims_old.csv")
 
 models = [
     "msmarco-MiniLM-L-6-v3",
@@ -55,20 +55,20 @@ for model in models:
 
 scores_list = [[k, v] for k, v in scores.items()]
 scores_list.sort(key=lambda x: x[1], reverse=True)
-# scores_list = [[k, round(v, 4)] for k, v in scores.items()]
-# scores_list.sort(key=lambda x: x[1], reverse=True)
-# pprint(scores_list)
+scores_list = [[k, round(v, 4)] for k, v in scores.items()]
+scores_list.sort(key=lambda x: x[1], reverse=True)
+pprint(scores_list)
 
-sum_1s = 0
-sum_2s = 0
-for model, score in scores_list:
-    if model_dict[model] == 1:
-        sum_1s += score
-    elif model_dict[model] == 2:
-        sum_2s += score
+# sum_1s = 0
+# sum_2s = 0
+# for model, score in scores_list:
+#     if model_dict[model] == 1:
+#         sum_1s += score
+#     elif model_dict[model] == 2:
+#         sum_2s += score
 
-print("cos sim", sum_1s / 5)
-print("dot prod", sum_2s / 3)
+# print("cos sim", sum_1s / 5)
+# print("dot prod", sum_2s / 3)
 
 
 # overlaps = {}

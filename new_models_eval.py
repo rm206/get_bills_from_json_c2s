@@ -11,9 +11,11 @@ models = [
     "mixedbread-ai/mxbai-embed-large-v1_dotprod",
     "WhereIsAI/UAE-Large-V1_dotprod",
     "Snowflake/snowflake-arctic-embed-l_dotprod",
+    "Alibaba-NLP/gte-base-en-v1.5_dotprod",
+    "Alibaba-NLP/gte-base-en-v1.5_cossim",
 ]
 
-model = models[5]
+model = models[6]
 
 for i, claim in enumerate(df["claim_entered"]):
     url1 = "http://127.0.0.1:8000/api?claim=" + claim + "&model_name=" + model

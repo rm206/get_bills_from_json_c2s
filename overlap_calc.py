@@ -18,6 +18,9 @@ models = [
     "mixedbread-ai/mxbai-embed-large-v1_cossim",
     "WhereIsAI/UAE-Large-V1_cossim",
     "Snowflake/snowflake-arctic-embed-l_cossim",
+    "mixedbread-ai/mxbai-embed-large-v1_dotprod",
+    "WhereIsAI/UAE-Large-V1_dotprod",
+    "Snowflake/snowflake-arctic-embed-l_dotprod",
 ]
 
 # model_dict = {

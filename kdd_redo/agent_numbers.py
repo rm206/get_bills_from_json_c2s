@@ -11,9 +11,6 @@ for i, agent_found in enumerate(df["agent_found"]):
     id_found = df.loc[i, "id_found"].lower()
     real_id = df.loc[i, "real_id"].lower()
 
-    print("agent_found:", id_found)
-    print("real_agent:", real_id)
-
     if id_found == "no_agent_found":
         no_agent_count += 1
     elif id_found == real_id:
@@ -23,4 +20,8 @@ for i, agent_found in enumerate(df["agent_found"]):
 
     total_count += 1
 
-print("right percentage:", right_count / total_count)
+print("right percentage (total):", right_count / total_count)
+print(
+    "right percentage (excluding no_agent_found):",
+    right_count / (total_count - no_agent_count),
+)

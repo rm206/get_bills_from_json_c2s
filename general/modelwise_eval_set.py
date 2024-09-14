@@ -34,8 +34,8 @@ models = [
 # model = models[0]
 # model = models[1]
 # model = models[2]
-model = models[3]
-# model = models[4]
+# model = models[3]
+model = models[4]
 # dot product models
 # model = models[5]
 # model = models[6]

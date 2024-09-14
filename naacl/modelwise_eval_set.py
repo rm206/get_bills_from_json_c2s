@@ -5,18 +5,6 @@ from pprint import pprint
 
 df = pd.read_csv("politifact_claims.csv")
 
-# cos similarity models -
-# msmarco-MiniLM-L-6-v3
-# msmarco-MiniLM-L-12-v3
-# msmarco-distilbert-base-v3
-# msmarco-distilbert-base-v4
-# msmarco-roberta-base-v3
-
-# dot product models -
-# msmarco-distilbert-base-dot-prod-v3
-# msmarco-roberta-base-ance-firstp
-# msmarco-distilbert-base-tas-b
-
 models = [
     # cos similarity models
     "msmarco-MiniLM-L-6-v3",
@@ -34,12 +22,12 @@ models = [
 # model = models[0]
 # model = models[1]
 # model = models[2]
-model = models[3]
+# model = models[3]
 # model = models[4]
 # dot product models
 # model = models[5]
 # model = models[6]
-# model = models[7]
+model = models[7]
 
 for i, claim in enumerate(df["claim_entered"]):
     url = "http://127.0.0.1:8000/api?claim=" + claim + "&model_name=" + model

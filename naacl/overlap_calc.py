@@ -1,7 +1,8 @@
 import pandas as pd
 from pprint import pprint
 
-df = pd.read_csv("colab_stuff_withouttags.csv")
+print("With Tags\n")
+df = pd.read_csv("colab_stuff_withtags.csv")
 
 # models = [
 #     # "msmarco-MiniLM-L-6-v3",
@@ -31,6 +32,8 @@ df = pd.read_csv("colab_stuff_withouttags.csv")
 models = [
     "stella_en_1.5B_v5_cossim",  # 0
     "stella_en_400M_v5_cossim",  # 1
+    "stella_en_1.5B_v5_dotscore",  # 4
+    "stella_en_400M_v5_dotscore",  # 5
 ]
 
 scores = {}
@@ -65,3 +68,4 @@ scores_list.sort(key=lambda x: x[1], reverse=True)
 scores_list = [[k, round(v, 10)] for k, v in scores.items()]
 scores_list.sort(key=lambda x: x[1], reverse=True)
 pprint(scores_list)
+print("\n\n")

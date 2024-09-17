@@ -2,7 +2,7 @@ import pandas as pd
 import requests
 import json
 
-df = pd.read_csv("politifact_claims.csv")
+df = pd.read_csv("colab_stuff.csv")
 
 # models = [
 #     "mixedbread-ai/mxbai-embed-large-v1_cossim",
@@ -32,6 +32,8 @@ for i, claim in enumerate(df["claim_entered"]):
     url1 = "http://127.0.0.1:8000/api?claim=" + claim + "&model_name=" + model
     url2 = "http://127.0.0.1:8001/api?claim=" + claim
 
+    df.loc[i, "part1_claim"] = claim
+
     bill_titles = []
 
     response1 = requests.get(url1)
@@ -46,10 +48,10 @@ for i, claim in enumerate(df["claim_entered"]):
         data1 = json.load(file)
 
     if not data1["member_id"]:
-        df.loc[i, model] = "no_agent"
+        df.loc[i, "part1_agent"] = "no_agent"
         continue
     if data1["frame_elements"]["Issue"]["start"] == -1:
-        df.loc[i, model] = "no_issue"
+        df.loc[i, "part1_issue"] = "no_issue"
         continue
 
     issue_start, issue_end = (
@@ -66,6 +68,11 @@ for i, claim in enumerate(df["claim_entered"]):
         + agent_retrieved
     )
 
+    df.loc[i, "part1_claim"] = claim
+    df.loc[i, "part1_agent"] = agent_retrieved
+    df.loc[i, "part1_issue"] = str(issue_start) + "@" + str(issue_end)
+
+    """
     response2 = requests.get(url2)
 
     if response2.status_code != 200:
@@ -85,4 +92,5 @@ for i, claim in enumerate(df["claim_entered"]):
 
     df.loc[i, model] = str(bill_titles)
 
-df.to_csv("politifact_claims.csv", index=False)
+"""
+df.to_csv("colab_stuff.csv", index=False)
